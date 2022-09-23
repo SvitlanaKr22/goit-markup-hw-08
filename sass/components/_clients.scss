@@ -1,0 +1,33 @@
+ .section__client{
+    width: 170px;
+    height: 92px;
+
+    &:not(:last-child){
+   margin-right: 30px;
+  }
+
+  }
+  
+  .section__client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid  var(--basic-border-color);
+    border-radius: 4px;
+    color: var(--basic-border-color);
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.section__client-ikon{
+    width: 106px;
+    height: 60px;
+  }
