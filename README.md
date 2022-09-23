@@ -1,3 +1,3 @@
-# goit-markup-hw-07
-homework 7 
-SASS + BEM
+# goit-markup-hw-08
+homework 8 
+adaptive layout and graphics
