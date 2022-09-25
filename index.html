@@ -22,6 +22,13 @@
                 <li class="header__list-link"> <a href="#" class="header__link">Контакти</a> </li>
             </ul>
             </nav>
+            <button type="button" class="mobile-menu-btn js-open-menu" 
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="mobile-menu-btn__icon">
+                  <use href="./images/icons.svg#icon-burger" aria-label="іконка випадаючого меню"></use>   
+                </svg>
+            </button>
             <ul class="header__site-nav list">
                 <li class="header__list-link">
                     <a href="mailo:info@devstudio.com" class="header__link header__list-nav">
@@ -40,8 +47,44 @@
                 </li>
             </ul>
         </div>
-     
+
+        <!--  Спливаюче меню для mobile          -->
+
+         <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <div class="container mobile-menu__container"> 
+                <button type="button" class="mobile-menu__close-btn js-close-menu">
+                <svg class="mobile-menu__close-btn-icon">
+                    <use href="./images/icons.svg#icon-close_mobile" aria-label="кнопка хрестик"></use>
+                </svg>  
+                </button>               
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item-link"> <a href="./index.html" class="mobile-menu__link mobile-menu__link_current">Студія</a> </li>
+                    <li class="mobile-menu__item-link"> <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a> </li>
+                    <li class="mobile-menu__item-link"> <a href="#" class="mobile-menu__link">Контакти</a> </li>
+                </ul>
+                <ul class="mobile-menu__list-contact list">
+                    <li class="mobile-menu__item-link">
+                        <a href="tel:+380961111111" class="mobile-menu__link mobile-menu__link_tel">
+                        +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item-link">
+                        <a href="mailo:info@devstudio.com" class="mobile-menu__link mobile-menu__link_mail">
+                        info@devstudio.com
+                        </a>
+                    </li>                    
+                 </ul>
+                 <ul class="mobile-menu__list-social list">
+                    <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__link mobile-menu__link_social">Instagram</a></li>
+                    <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__link mobile-menu__link_social">Twitter</a></li>
+                    <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__link mobile-menu__link_social">Facebook</a></li>
+                    <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__link mobile-menu__link_social">LinkedIn</a></li>
+                 </ul>
+            </div>
+            </div>   
     </header>
+
+
     <main>
         <section class="hero">
             <div class="container">    
@@ -102,7 +145,7 @@
             </div>
         </section>
         <!-- Чим займаємося -->
-        <section class="section activity">
+        <!-- <section class="section activity">
             <div class="container">
             <h2 class="section__title">Чим ми займаємося</h2>
             <ul class="list list_do">
@@ -126,9 +169,9 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Наша команда -->
-        <section class="section team">
+        <!-- <section class="section team">
             <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="list list_do">
@@ -282,9 +325,9 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Постійні кліенти -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section__title">Постійні клієнти</h2>
                 <ul class="list list_do">
@@ -333,9 +376,9 @@
                 </ul>
             </div>
         </section>
-        
+         -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__content">
                 <div>
                     <a href="./index.html" class="logo logo_footer" lang="en">
@@ -457,6 +500,7 @@
             </form>
         </div>
     </div>
-<script src="./js/modal.js"></script>    
+<script src="./js/modal.js"></script>     -->
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

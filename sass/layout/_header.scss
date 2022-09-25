@@ -3,17 +3,20 @@
   }
 
 .container__header{
+  // background-color: tomato;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .header__page-nav{
-    display: flex;
+ 
+     // display: flex;
   }
 
 .header__site-nav{
-    display: flex;
+  display: none;
+    // display: flex;
     align-items: center;
 
    .header__list-link{
@@ -64,9 +67,20 @@
       background-color: var(--accent-color);
       border-radius: 2px;
     }
+    }  
+}
+
+  .mobile-menu-btn{
+      border: none;
+      padding: 0;
+      line-height: 0;
+      background-color: var(--basic-background-color);
     }
 
-}
+  .mobile-menu-btn__icon{
+    width: 24px;
+    height: 16px;
+  }  
 
 
 

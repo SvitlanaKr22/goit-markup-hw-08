@@ -24,17 +24,44 @@
     height: auto;
 }
 
- .container{
-  width: 1200px;
+//  .container{
+//   width: 1200px;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+.container{
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto;  
+
+   @media screen and (min-width:480px) {
+    width: 480px;
+    // margin-right: auto;
+    // margin-left: auto;    
+  }
+
+  @media screen and (min-width:768px) {
+    width: 768px;
+  } 
+   
+   @media screen and (min-width:1200px){
+    width: 1200px;  
+  }
 }
 
 .section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:1200px){
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 94px; 
+  }
+  
 }
 
 .section__title{
@@ -49,7 +76,21 @@
     list-style: none;
 
   }
-  .list_do{
+   //для планшета и компьютера
+
+  @media screen and (min-width:768px) and (max-width:1199px){ 
+    .list_do{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
   }
+  }
+  
+  @media screen and (min-width:1200px){
+    .list_do{
+     display: flex; 
+     justify-content: space-between;
+    }
+  }
+  
