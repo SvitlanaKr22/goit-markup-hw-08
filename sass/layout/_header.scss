@@ -21,20 +21,16 @@
   display: none;
 
   @media screen and (min-width:768px){
-    display: flex;
-  
+    display: flex;     
   }
   align-items: center;
 
    .header__list-link{
-       position: relative;
-       margin-right: 0;
-      
-      @media screen and (min-width:1200px){ 
+       position: relative;          
+
        &:not(:last-child){
            margin-right: 50px;
-       }
-      }    
+       }    
    }  
   
     .header__link{
@@ -94,9 +90,16 @@
   .header__site-nav-tablet{
     display: block; 
   }
+  
 }
+.header__item-contact{
+   @media screen and (min-width:1200px){ 
+       &:not(:last-child){
+           margin-right: 50px;
+       }
+       }  
 
-
+}
   .mobile-menu-btn{
       border: none;
       padding: 0;

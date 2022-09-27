@@ -14,7 +14,6 @@
   }
 
   @media screen and (min-width:1200px){
-   // display: flex;
     align-items: baseline;
     justify-content: space-between;
     text-align: start;
@@ -54,10 +53,6 @@
     text-transform: uppercase;
     color: var(--primary-bg-color);   
 }
-
-//   .social-net_jsfcon{
-//     justify-content: flex-start;
-// }
 
 .footer__social-link{
     @include snetlink(rgba(255, 255, 255, 0.1));

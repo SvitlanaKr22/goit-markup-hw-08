@@ -1,9 +1,7 @@
-.form-subscription{
-     height: 86px;
-     
-     @media screen and (min-width:768px) and (max-width:1199px){
-      margin-top: 60px;  
-     }
+@media screen and (min-width:768px) and (max-width:1199px){
+.form-subscription{ 
+     margin-top: 60px;  
+}
 }
 
 .form-subscription__text{

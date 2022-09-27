@@ -471,12 +471,9 @@ img {
 }
 .header__site-nav .header__list-link {
   position: relative;
-  margin-right: 0;
 }
-@media screen and (min-width: 1200px) {
-  .header__site-nav .header__list-link:not(:last-child) {
-    margin-right: 50px;
-  }
+.header__site-nav .header__list-link:not(:last-child) {
+  margin-right: 50px;
 }
 .header__site-nav .header__link {
   display: inline-block;
@@ -532,6 +529,12 @@ img {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__item-contact:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .mobile-menu-btn {
   border: none;
   padding: 0;
@@ -1047,15 +1050,11 @@ img {
   display: block;
 }
 
-.form-subscription {
-  height: 86px;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-subscription {
     margin-top: 60px;
   }
 }
-
 .form-subscription__text {
   margin-bottom: 20px;
   font-weight: 700;
