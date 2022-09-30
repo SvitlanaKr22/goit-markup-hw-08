@@ -1,6 +1,9 @@
 
 .section__feature{
-    width: 450px;
+   @media screen and (min-width:450px){
+     width: 450px; 
+    }
+    
   
     @media screen and (min-width:768px){
      width: 354px; 
